@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Rail Census</string>
+    <string name="indian_railways">Indian Railways</string>
+    <string name="welcomes_you_to">Welcomes you to</string>
+    <string name="rail_census">Rail Census</string>
+    <string name="any_time_any_where">Any time..Any where....</string>
+    <string name="head_quarters">Head Quarters</string>
+    <string name="division">Division</string>
+    <string name="field_officers">Field Officers</string>
+    <string name="hello_there">Hello there!!!!</string>
+    <string name="welcome_to_rail_census">Welcome to Rail Census..</string>
+    <string name="pf_no">PF NO</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="textview">TextView</string>
+    <string name="cc">CC</string>
+    <string name="occupancy">Occupancy</string>
+    <string name="coach_type">Coach Type</string>
+    <string name="coach_no">Coach No</string>
+    <string name="train_no">Train No</string>
+    <string name="todo">TODO</string>
+    <string name="hello_there22">Hello there!!!</string>
+    <string name="submit1">Submit</string>
+    <string name="name1">Name</string>
+    <string name="login2">Login</string>
+    <string name="ww">Welcome to Rail Census</string>
+    <string name="tod">TODO</string>
+    <string name="todo1">todo</string>
+    <string name="todo2">TODO</string>
+    <string name="spinner_title" />
+    <string name="appbar_scrolling_view_behavior" />
+    <string name="tag_content" />
+
+
+    <string-array name="Div">
+        <item>Coach Type</item>
+        <item>II UR</item>
+        <item>SL</item>
+        <item>3AC</item>
+        <item>2AC</item>
+        <item>IA</item>
+        <item>2S</item>
+        <item>CC</item>
+        <item>GS</item>
+        <item>Ladies</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "19628646096",
+    "firebase_url": "https://railcensus.firebaseio.com",
+    "project_id": "railcensus",
+    "storage_bucket": "railcensus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19628646096:android:fa99faba063d01d9",
+        "android_client_info": {
+          "package_name": "com.example.railcensus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19628646096-h8mon9qmlipm6kp02s20ftqlvv2cvqmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.railcensus",
+            "certificate_hash": "3c397deb0c0834bec5bd154d67d287c011c0e32e"
+          }
+        },
+        {
+          "client_id": "19628646096-co1p9fiak1n887lk54gvhrd9d8r8nrpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjpsu1LrdsGoQug_NQcoQCcPaaF_8fqGs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19628646096-co1p9fiak1n887lk54gvhrd9d8r8nrpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/c"
+    android:elevation="18dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="-1dp"
+    android:fontFamily="@font/sf_pro_display_semibold"
+
+    android:textColor="#ffff"
+    android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-1dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="asdd"
+        android:textColor="#ffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="a"
+        android:textColor="#ffff"
+        android:textSize="8sp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="a"
+        android:textColor="#ffff"
+        android:textSize="10sp" />
+
+</RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
