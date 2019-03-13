@@ -4,7 +4,7 @@
     android:layout_height="40dp"
     android:id="@+id/toolbar"
 
-    android:background="#0470b8">
+    android:background="@color/c">
 
 
 

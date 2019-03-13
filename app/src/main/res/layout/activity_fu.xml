@@ -131,7 +131,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="TRAIN NO"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -191,12 +191,12 @@
 
                                 <TextView
                                     android:id="@+id/mob8"
-                                    android:layout_weight="5.5"
+
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="COACH TYPE"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -262,12 +262,12 @@
 
                                 <TextView
                                     android:id="@+id/cc"
-                                    android:layout_weight="5.5"
+
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="COACH NO"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6"/>
 
 
                             </LinearLayout>
@@ -335,7 +335,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="CARRYING CAPACITY"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -393,12 +393,11 @@
 
                                 <TextView
                                     android:id="@+id/renewalmode"
-                                    android:layout_weight="5.5"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="MALE"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -456,12 +455,12 @@
 
                                 <TextView
                                     android:id="@+id/editTextfe"
-                                    android:layout_weight="5.5"
+
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="FEMALE"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -519,12 +518,12 @@
 
                                 <TextView
                                     android:id="@+id/amountexc12"
-                                    android:layout_weight="5.5"
+
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="SENIOR CITIZENS"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -579,12 +578,12 @@
 
                                 <TextView
 
-                                    android:layout_weight="5.5"
+
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="STUDENT"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -640,12 +639,12 @@
 
                                 <TextView
 
-                                    android:layout_weight="5.5"
+
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="SEASON TICKET"
                                     android:textStyle="bold"
-                                    android:textColor="#333333" />
+                                    android:textColor="#205cf6" />
 
 
                             </LinearLayout>
@@ -716,7 +715,17 @@
                                     android:layout_weight="5.5"
 
                                     android:text="TOTAL COUNT"
-                                    android:textColor="#333333"
+                                    android:textColor="#205cf6"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/tc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.5"
+                                    android:background="@drawable/but_background"
+                                    android:textColor="#205cf6"
                                     android:textStyle="bold" />
 
 
@@ -757,13 +766,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:paddingTop="16dp">
+                            android:paddingTop="56dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
-                                android:paddingTop="12dp">
+                                android:paddingTop="76dp">
 
                                 <Button
                                     android:id="@+id/button3"

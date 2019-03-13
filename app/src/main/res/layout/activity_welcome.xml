@@ -28,11 +28,13 @@
     />
 
     <RelativeLayout
-        android:layout_width="410dp"
-        android:layout_height="484dp"
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="213dp">
+        tools:layout_editor_absoluteY="248dp">
+
 
 
         <Button

@@ -50,7 +50,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/aclonica"
                     android:text="CENSUS OFFICER"
-                    android:textColor="#0470b8"
+                    android:textColor="#205cf6"
                     android:textSize="25sp" />
 
 
@@ -102,7 +102,7 @@
                             android:layout_height="wrap_content"
                             android:text="SECTION"
                             android:textStyle="bold"
-                            android:textColor="#0470b8" />
+                            android:textColor="#205cf6" />
 
 
                     </LinearLayout>
@@ -130,9 +130,9 @@
 
                             android:id="@+id/sec"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
                             android:layout_margin="8dp"
-                            android:background="#0470b8"
+                            android:background="@color/c"
                             android:gravity="center"
                             android:textColor="#fff"
                             android:textSize="14dp"
@@ -145,14 +145,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingLeft="8dp"
-                    android:paddingTop="16dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingTop="12dp">
+                       >
 
                         <TextView
                             android:id="@+id/mob8"
@@ -162,7 +161,7 @@
                             android:layout_height="wrap_content"
                             android:text="STATION"
                             android:textStyle="bold"
-                            android:textColor="#0470b8" />
+                            android:textColor="#205cf6" />
 
 
                     </LinearLayout>
@@ -183,17 +182,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
+
 
                         >
 
                         <TextView
                             android:id="@+id/station"
-                            android:layout_margin="8dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#0470b8"
-                            android:textColor="#000"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:background="@color/c"
+                            android:textColor="#fff"
 
                             />
 
@@ -225,7 +224,7 @@
                             android:layout_height="wrap_content"
                             android:text="DATE"
                             android:textStyle="bold"
-                            android:textColor="#0470b8" />
+                            android:textColor="#205cf6" />
 
 
                     </LinearLayout>
@@ -246,26 +245,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
+
 
                         >
 
                         <TextView
                             android:id="@+id/date1"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#0470b8"
+                            android:layout_height="40dp"
+                            android:background="@color/c"
+                            android:layout_margin="8dp"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:textColor="#000"
+                            android:textColor="#fff"
 
                             android:textColorHint="#333333" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#dad8d8" />
+
                     </LinearLayout>
                 </LinearLayout>
 
@@ -291,7 +288,7 @@
                             android:text="Shift In"
                             android:textSize="18dp"
                             android:textStyle="bold"
-                            android:textColor="#0470b8" />
+                            android:textColor="#205cf6" />
 
 
                     </LinearLayout>
@@ -316,7 +313,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="5.5"
                             android:text="Shift Out"
-                            android:textColor="#0470b8"
+                            android:textColor="#205cf6"
                             android:textSize="18dp"
                             android:textStyle="bold" />
 
@@ -346,8 +343,8 @@
                         <EditText
                             android:id="@+id/shiftin"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="#0470b8"
+                            android:layout_height="30dp"
+                            android:background="@color/c"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
                             android:singleLine="true"
@@ -385,8 +382,8 @@
                         <EditText
                             android:id="@+id/shiftout"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="#0470b8"
+                            android:layout_height="30dp"
+                            android:background="@color/c"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
                             android:singleLine="true"
@@ -405,7 +402,7 @@
 
 
 
-                <TextView
+                <Button
                     android:id="@+id/submitnew"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"

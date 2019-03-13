@@ -1,6 +1,7 @@
 package com.example.railcensus;
 
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.firebase.firestore.DocumentReference;
@@ -34,11 +36,13 @@ import static com.example.railcensus.Hdlogin1.databasefirestorelogin;
 import static java.lang.String.valueOf;
 
 public class Divassign extends AppCompatActivity
-{
+{      private long mLastClickTime = 0;
     TextView assigndivname, assigndate;
     DatePickerDialog datepick;
     Spinner divec,divsta;
     String temp1;
+    TextView et_from_time,et_to_time,submitnew;
+    TimePickerDialog timePickerDialog;
     String get_section="MAS-PTMS";
     int year, month, dayOfMonth,loding=0;
     Calendar calendar = Calendar.getInstance();
@@ -67,6 +71,9 @@ public class Divassign extends AppCompatActivity
                 assigndate.setText(sdf.format(calendar.getTime()));
             }
         };
+
+
+
         assigndate.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -328,6 +335,55 @@ public class Divassign extends AppCompatActivity
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
+        et_from_time = (TextView) findViewById(R.id.et_from_time);
+        et_to_time = (TextView) findViewById(R.id.et_to_time);
+
+
+
+        et_from_time.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                final Calendar c = Calendar.getInstance();
+                int hour = c.get(Calendar.HOUR_OF_DAY);
+                int minute = c.get(Calendar.MINUTE);
+                // Create a new instance of TimePickerDialog
+                timePickerDialog = new TimePickerDialog(Divassign.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
+                        et_from_time.setText( selectedHour + ":" + selectedMinute);
+                    }
+                }, hour, minute, true);//Yes 24 hour time
+                timePickerDialog.setTitle("Select Time");
+                timePickerDialog.show();
+                et_from_time.setFocusable(false);
+            }
+        });
+
+
+        et_to_time.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                final Calendar c = Calendar.getInstance();
+                int hour = c.get(Calendar.HOUR_OF_DAY);
+                int minute = c.get(Calendar.MINUTE);
+                // Create a new instance of TimePickerDialog
+                timePickerDialog = new TimePickerDialog(Divassign.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
+                        et_to_time.setText( selectedHour + ":" + selectedMinute);
+                    }
+                }, hour, minute, true);//Yes 24 hour time
+                timePickerDialog.setTitle("Select Time");
+                timePickerDialog.show();
+                et_from_time.setFocusable(false);
+            }
+        });
+
+
 
     }
 }

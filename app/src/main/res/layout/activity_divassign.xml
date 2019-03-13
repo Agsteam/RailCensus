@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
+    android:background="#fff"
 android:layout_height="match_parent"
 android:id="@+id/relsnack"
 tools:context=".Divassign">
@@ -37,363 +38,355 @@ tools:context=".Divassign">
 </FrameLayout>
 
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/order"
-    android:layout_marginBottom="52.5dp">
-
-
-
-
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#dad8d8"
-            android:gravity="bottom"/>
-
-        <TextView
-            android:id="@+id/view_census"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/c"
-            android:text="View Census"
-            android:textSize="13dp"
-            android:textColor="#fff"
-            android:gravity="center"
-
-            android:layout_alignParentBottom="true"
-            />
-
-
-
+        android:layout_height="match_parent"
+        android:layout_below="@+id/order"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="52.5dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:paddingTop="12dp">
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad8d8"
+                android:gravity="bottom" />
+
+            <Button
+                android:id="@+id/view_census"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/c"
+                android:gravity="center"
+                android:text="View Census"
+                android:textColor="#fff"
+
+                android:textSize="13dp" />
 
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                >
-
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="1dp"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/aclonica"
-                    android:text="ASSIGN CENSUS OFFICER"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="17sp" />
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:textColor="#000"
-                    android:layout_marginTop="50dp"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="DIV NAME"
-                    android:gravity="bottom"
-
-
-                    android:paddingBottom="9dp"
-                    android:textSize="16.5dp" />
-
-                <TextView
-                    android:textCursorDrawable="@color/colorPrimaryDark"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:cursorVisible="true"
-
-                    android:background="@drawable/style"
-                    android:inputType="textPersonName"
-                    android:paddingLeft="10dp"
-                    android:textColor="#000"
-                    android:text=""
-                    android:editable="false"
-                    android:ems="15"
-                    android:id="@+id/div_nam" />
-
-
-
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:textColor="#000"
-                    android:layout_marginTop="30dp"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="DATE"
-                    android:gravity="bottom"
-
-
-                    android:paddingBottom="9dp"
-                    android:textSize="16.5dp"
-                    android:id="@+id/first_text_Start_time" />
-
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date" />
-
-            <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
+                android:padding="16dp"
+                android:paddingTop="12dp">
 
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                >
-
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="match_parent"
-
-                    android:gravity="bottom"
-                    android:paddingBottom="9dp"
-                    android:text="SECTION"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-
-                    android:textColor="#000"
-                    android:textSize="16.5dp" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/style"
-                    android:orientation="vertical"
 
-                    >
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-                    <Spinner
 
-                        android:id="@+id/et_station"
-                        android:layout_width="fill_parent"
-
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:prompt="@string/spinner_title"
-                        />
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="ASSIGN CENSUS OFFICER"
+                        android:textColor="#205cf6"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:gravity="bottom"
+                        android:paddingBottom="9dp"
+                        android:text="DIV NAME"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+
+                        android:textColor="#205cf6"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/div_nam"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/style"
+                        android:ems="15"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textCursorDrawable="@color/colorPrimaryDark" />
+
+
                 </LinearLayout>
-            </LinearLayout>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                >
-
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="match_parent"
-
-                    android:gravity="bottom"
-                    android:paddingBottom="9dp"
-                    android:text="STATION"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-
-                    android:textColor="#000"
-                    android:textSize="16.5dp" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/style"
 
-                    >
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
 
-                    <Spinner
-                        android:id="@+id/et_section"
-                        android:layout_width="fill_parent"
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:paddingBottom="9dp"
+                        android:text="SECTION"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#205cf6"
+
+
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:prompt="@string/spinner_title"
-                        />
+                        android:background="@drawable/style"
+                        android:orientation="vertical"
+
+                        >
+
+                        <Spinner
+
+                            android:id="@+id/et_station"
+                            android:layout_width="fill_parent"
+
+                            android:layout_height="35dp"
+                            android:prompt="@string/spinner_title" />
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                >
-
-
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:textColor="#000"
-
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="TIME"
-                    android:gravity="bottom"
-
-                    android:paddingBottom="9dp"
-                    android:textSize="16.5dp" />
-
-                <TextView
-                    android:textCursorDrawable="@color/colorPrimaryDark"
-                    android:layout_width="120dp"
-                    android:layout_height="35dp"
-                    android:layout_marginRight="10dp"
-                    android:textAlignment="textStart"
-
-                    android:id="@+id/et_from_time"
-                    android:background="@drawable/style"
-                    android:hint="From"
-                    android:paddingLeft="10dp"
-                    android:textColor="#000" />
-
-
-                <TextView
-                    android:textCursorDrawable="@color/colorPrimaryDark"
-                    android:layout_width="120dp"
-                    android:layout_height="35dp"
-                    android:hint="To"
-                    android:cursorVisible="true"
-
-                    android:id="@+id/et_to_time"
-                    android:background="@drawable/style"
-                    android:inputType="textPersonName"
-                    android:paddingLeft="10dp"
-                    android:textColor="#000"
-                    android:text=""
-                    android:editable="false"
-                    android:ems="15" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textColor="#000"
-
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="ASSIGN CENSUS OFFICER"
-                    android:gravity="bottom"
-
-                    android:paddingBottom="9dp"
-                    android:textSize="16.5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:background="@drawable/style"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                >
-
-
-
-
-
-                <Spinner
-                    android:id="@+id/census_off_name"
+                <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:prompt="@string/spinner_title"
-                    />
-            </LinearLayout>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                >
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textColor="#000"
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
 
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="PF Number"
-                    android:gravity="bottom"
+                        android:gravity="bottom"
+                        android:paddingBottom="9dp"
+                        android:text="STATION"
 
-                    android:paddingBottom="9dp"
-                    android:textSize="16.5dp" />
+                        android:textColor="#205cf6"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/style"
+                        android:orientation="vertical"
+
+                        >
+
+                        <Spinner
+                            android:id="@+id/et_section"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:prompt="@string/spinner_title" />
+                    </LinearLayout>
+                </LinearLayout>
 
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:background="@drawable/style"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                >
-
-
-                <Spinner
-                    android:id="@+id/spin_pf_no"
+                <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:prompt="@string/spinner_title"
-                    />
+
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:gravity="bottom"
+                        android:paddingBottom="9dp"
+                        android:text="ASSIGN CENSUS OFFICER"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:textColor="#205cf6"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/style"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/census_off_name"
+                        android:background="@drawable/but_background"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+
+                        android:paddingBottom="9dp"
+                        android:text="PF Number"
+
+                        android:textColor="#205cf6"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/style"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/spin_pf_no"
+                        android:background="@drawable/but_background"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Lk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="bottom"
+                        android:paddingBottom="9dp"
+                        android:text="TIME"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:textColor="#205cf6"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/et_from_time"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/style"
+
+                        android:hint="From"
+                        android:paddingLeft="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/c"
+                        android:textCursorDrawable="@color/c"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/et_to_time"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/style"
+                        android:cursorVisible="true"
+                        android:ems="15"
+                        android:hint="To"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textCursorDrawable="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="@+id/Lk">
+
+                    <TextView
+                        android:id="@+id/first_text_Start_time"
+                        android:layout_width="70dp"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="10dp"
+                        android:text="DATE"
+                        android:textColor="#205cf6"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/but_background"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:inputType="date" />
+
+
+                </LinearLayout>
+
+
             </LinearLayout>
-
-
-
         </LinearLayout>
-    </LinearLayout>
 
 
-
-</ScrollView>
+    </ScrollView>
 
 
 
 
 
 <!--****PAY****-->
-<TextView
-    android:id="@+id/submitnew"
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:background="@color/c"
-    android:text="SUBMIT"
-    android:textSize="13dp"
-    android:textColor="#fff"
-    android:gravity="center"
+    <Button
+        android:id="@+id/submitnew"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textColor="#fff"
 
-    android:layout_alignParentBottom="true"
-    />
+        android:textSize="18sp" />
 
 </RelativeLayout>

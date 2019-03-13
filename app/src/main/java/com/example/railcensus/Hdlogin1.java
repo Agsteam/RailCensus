@@ -18,13 +18,17 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
+
+import org.w3c.dom.Text;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
 public class Hdlogin1 extends AppCompatActivity {
-    EditText pf1,dob1,hdloginlable;
+    EditText pf1,dob1;
+    TextView hdloginlable;
     Button singin1;
     public static String pfvalue,temp,pfvali,name,div,sta,actype,sec,temp1,temp2;
     public static Date dobvalue,sfin,sfout,datevali,curdate;
@@ -34,7 +38,7 @@ public class Hdlogin1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hdlogin1);
-        hdloginlable=(EditText) findViewById(R.id.textView5);
+        hdloginlable=(TextView) findViewById(R.id.textView5);
         hdloginlable.setText(getIntent().getStringExtra("lable"));
         curdate = Calendar.getInstance().getTime();
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
